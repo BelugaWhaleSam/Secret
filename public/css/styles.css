@@ -1,16 +1,73 @@
 
 body {
-  background-color: #E8ECEF;
+  background-color: #000000;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(352.72, 98%, 41%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(267.27, 74%, 37%) 0, transparent 55%);
+  color: white;
+
 }
 
+.container {
+  min-height: 100vh;
+}
+.row {
+  margin-top: 200px;
+}
+@media (max-width: 1000px) {
+  .row {
+    margin-top: 110px;
+  }
+  .container {
+    margin-top: 90px;
+  }
+}
+
+.grad {
+  background-color: #000000;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(352.72, 98%, 41%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(267.27, 74%, 37%) 0, transparent 55%);
+
+}
+.row-pad {
+  margin-top: 0px;
+}
+.card-body{
+  
+}
+.card{
+  backdrop-filter: blur(13px) saturate(200%);
+    -webkit-backdrop-filter: blur(13px) saturate(200%);
+    background-color: rgba(17, 23, 37, 0.69);
+    border-radius: 12px;
+    border: 0px solid rgba(255, 255, 255, 0.125);
+}
+
+.text {
+  color: white;
+  margin: 1px auto;
+}
+
+.text:hover {
+  color: white
+}
+
+.fab {
+  padding-right:6px;
+}
 .centered {
-    padding-top: 200px;
+    padding-top: 170px;
     text-align: center;
 }
 
 .secret-text {
+  padding: 10px;
   text-align: center;
-  font-size: 2rem;
-  color: #fff;
-  background-color: #000;
+  font-size: 1.5rem;
+  backdrop-filter: blur(13px) saturate(200%);
+    -webkit-backdrop-filter: blur(13px) saturate(200%);
+    background-color: rgba(17, 23, 37, 0.69);
+    border-radius: 12px;
+    border: 0px solid rgba(255, 255, 255, 0.125);
 }

@@ -1,12 +1,14 @@
 <%- include('partials/header') %>
 <div class="container mt-5">
-  <h1>Register</h1>
+  
 
   <div class="row">
-    <div class="col-sm-8">
+    
+    <div class="col-lg-8 col-md-12 col-sm-12">
       <div class="card">
         <div class="card-body">
-
+          <h1>Register</h1>
+          <br>
           <!-- Makes POST request to /register route -->
           <form action="/register" method="POST">
             <div class="form-group">
@@ -19,22 +21,35 @@
             </div>
             <button type="submit" class="btn btn-dark">Register</button>
           </form>
-
         </div>
       </div>
     </div>
-
-    <!-- <div class="col-sm-4">
-      <div class="card social-block">
-        <div class="card-body">
-          <a class="btn btn-block" href="/auth/google" role="button">
-            <i class="fab fa-google"></i>
-            Sign Up with Google
-          </a>
+      <div class="col-lg-4 col-md-6 col-sm-6 text">
+          <div class="card-body">
+            <a class="btn btn-block btn-danger text" href="/auth/google" role="button">
+              <i class="fab fa-google"></i>
+              Sign Up with Google
+            </a>
         </div>
+          <div class="card-body">
+            <a class="btn btn-block btn-dark text" href="/auth/github" role="button">
+              <i class="fab fa-github"></i>
+              Sign Up with Github
+            </a>
+        </div>
+          <div class="card-body">
+            <a class="btn btn-block btn-success text" href="/auth/spotify" role="button">
+              <i class="fab fa-spotify"></i>
+              Sign Up with Spotify
+            </a>
+        </div>
+        <div class="card-body">
+          <a class="btn btn-block btn-info text" href="/auth/facebook" role="button">
+            <i class="fab fa-facebook"></i>
+            Sign Up with Facebook
+          </a>
       </div>
-    </div> -->
-
+      </div>
   </div>
 </div>
 
