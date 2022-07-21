@@ -31,8 +31,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://Admin:Admin@cluster0.xhxbn.mongodb.net/userDB", {useNewUrlParser: true});
-// mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
+// mongoose.connect("mongodb+srv://Admin:Admin@cluster0.xhxbn.mongodb.net/userDB", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
 // Schema
 const userSchema = new mongoose.Schema({
     email: String,
@@ -259,6 +259,6 @@ app.post("/submit", function(req, res){
   });
 });
 
-app.listen(process.env.PORT || 3000, function(){
-    console.log("Server started on port 3000");
+app.listen(process.env.PORT || 8000, function(){
+    console.log("Server started on port 8000");
 })
