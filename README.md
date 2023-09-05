@@ -4,6 +4,12 @@ Secret Whisper is a web application that allows users to share secrets anonymous
 
 ![image](https://user-images.githubusercontent.com/99763743/197290151-e7ddad1b-98bf-4e15-b9c1-cdb02fbf13ef.png)
 
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+
 ## Features
 
 - User Registration: Users can create accounts to access the app's features.
